@@ -13,6 +13,10 @@
 	},
 	"settings": {
 		"cmake.cmakePath": "C:/Program Files/CMake/bin/cmake.exe",
+		"cmakeFormat.args": [
+			"--config-files ${workspaceFolder}/.cmake-format.json"
+		],
+		"cmakeFormat.cwd": "${workspaceFolder}",
 		"editor.formatOnPaste": true,
 		"editor.formatOnSave": true,
 		"editor.formatOnType": true
