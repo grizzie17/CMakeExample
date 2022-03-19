@@ -1,9 +1,10 @@
-cmake_minimum_required(VERSION 3.17)
+cmake_minimum_required( VERSION 2.9...3.22 )
+
+project( CMakeExample C CXX )
+
+set(THIS ${CMAKE_PROJECT_NAME})
 
 set(THIS CMakeExample)
-
-project(${THIS} C CXX)
-
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
@@ -19,6 +20,7 @@ else()
 	add_definitions(-DNDEBUG=1 -UDEBUG -U_DEBUG)
 endif()
 
+# link_directories("/mingw64/lib")
 
 if (CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
 	include(CTest)

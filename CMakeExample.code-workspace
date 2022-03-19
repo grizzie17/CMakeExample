@@ -7,18 +7,17 @@
 	"extensions": {
 		"recommendations": [
 			"ms-vscode.cmake-tools",
-			"twxs.cmake"
+			"twxs.cmake",
+			//"cheshirekow.cmake-format"
 		],
 		"unwantedRecommendations": []
 	},
 	"settings": {
-		"cmake.cmakePath": "C:/Program Files/CMake/bin/cmake.exe",
-		"cmakeFormat.args": [
-			"--config-files ${workspaceFolder}/.cmake-format.json"
+		"terminal.integrated.defaultProfile.windows": "MSYS",
+		"cmake.cmakePath": "C:/msys64/mingw64/bin/cmake.exe",
+		"cmake.mingwSearchDirs": [
+			"C:\\msys64\\mingw64\\bin"
 		],
-		"cmakeFormat.cwd": "${workspaceFolder}",
-		"editor.formatOnPaste": true,
-		"editor.formatOnSave": true,
-		"editor.formatOnType": true
+		"cmake.generator": "MinGW Makefiles"
 	}
 }
